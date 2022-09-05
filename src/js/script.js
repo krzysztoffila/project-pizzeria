@@ -53,7 +53,7 @@
   };
 
   const app = {
-    init: function(){
+    init: function () {
       const thisApp = this;
       console.log('*** App starting ***');
       console.log('thisApp:', thisApp);
