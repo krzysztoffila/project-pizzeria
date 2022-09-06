@@ -61,6 +61,9 @@
 
   const app = {
     initMenu: function () {
+      const thisApp = this;
+      console.log('thisApp.data', thisApp);
+
       const testProduct = new Product();
       console.log('testProduct:', testProduct);
     },
@@ -76,10 +79,10 @@
       console.log('settings:', settings);
       console.log('templates:', templates);
 
+      thisApp.initData();
       thisApp.initMenu();
     },
   };
-  app.initData();
   app.initMenu();
   app.init();
 }
