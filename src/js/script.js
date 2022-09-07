@@ -63,12 +63,13 @@
     renderInMenu() {
       const thisProduct = this;
       /* generate HTML on based template */
-
+      const generatedHTML = templates.menuProduct(thisProduct.data);
       /* create element using utils.createELementFromHTML */
-
+      thisProduct.element = utils.createDOMFromHTML(generatedHTML);
       /* find menu container */
-
+      const menuContainer = document.querySelector(select.containerOf.menu);
       /* add element to menu */
+      menuContainer.appendChild(thisProduct.element);
     }
   }
 
